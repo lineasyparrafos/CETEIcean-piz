@@ -1,16 +1,91 @@
-body {
-  font-size: 12pt;
-}
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Ms+Madi&family=Share+Tech+Mono&display=swap');
 
 tei-body {
-  
+  font-size: 12pt;
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
 }
 
 tei-head {
   display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+tei-head tei-persname {
+  font-variant: normal;
 }
 
 tei-p {
   display: block;
 }
 
+tei-div {
+  margin-top: 0px;
+  display: block;
+  background-color: antiquewhite;
+  border: dotted;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+tei-div[type="manuscrito"] {
+  font-family: 'Ms Madi', cursive;
+}
+
+tei-div[type="impreso"] {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 80%;
+}
+
+tei-persname {
+  font-variant: small-caps;
+}
+
+
+tei-foreign {
+  text-decoration: underline;
+}
+
+tei-abbr {
+  display: none;
+}
+
+tei-corr {
+  color: green;
+  font-weight: bold;
+}
+
+tei-del {
+  color: red;
+  text-decoration: line-through;
+}
+
+tei-add {
+  color: blue;
+  font-weight: bold;
+}
+
+tei-gap {
+  background-color: black;
+}
+
+tei-gap::before {
+  content: "  ";
+  white-space: pre;
+}
+
+
+tei-lb::before {
+  white-space: pre;
+  content: "\A";
+}
+
+
+tei-signed {
+  font-family: 'Homemade Apple', cursive;
+  }
